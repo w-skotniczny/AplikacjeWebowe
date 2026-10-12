@@ -1,0 +1,28 @@
+*{
+background-color: black;
+color: white;
+}
+
+table{
+border-collapse: collapse;
+width: 80%;
+}
+
+.kwadrat, #cat{
+float: left;
+width: 100px;
+height: 100px;
+margin: 10px;
+}
+
+.redText{
+color: red;
+}
+
+.blueText{
+color: cyan;
+}
+
+.greenText{
+color: lime;
+}
