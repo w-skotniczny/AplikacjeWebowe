@@ -16,6 +16,10 @@ body {
     justify-content: center;
 }
 
+li{
+    font-size: 25px;
+}
+
 table {
     border-collapse: collapse;
     width: 80%;
