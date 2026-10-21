@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <metaname ="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strona główna</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <button class="color-switcher" onclick="switchColors()">
+            <img src="img/color-switcher.png" alt="Przełącznik kolorów" />
+        </button>
+        <a href="index.html"><img id="logo" src="img/logo.png" alt="Logo" /></a>
+        <div class="nav-links-container">
+            <div class="nav-links">
+                <a href="index.html" class="current">Strona główna</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="galeria.html">Galeria</a>
+            </div>
+        </div>
+        <button class="nav-link-button" onclick="toggleNavLinks()">
+            <img src="img/nav-link-button.png" alt="hamburger" />
+        </button>
+    </nav>
+    <div class="mobile-links-container">
+        <a href="index.html" class="current">Strona główna</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="galeria.html">Galeria</a>
+    </div>
+
+
+    <main>
+        <form>
+            <div class="form-grid">
+                <div class="form-element" id="theme">
+                    <label for="theme-input">Temat</label>
+                    <select name="theme-input" id="theme">
+                        <option value="question">Pytanie</option>
+                        <option value="feedback">Opinia</option>
+                        <option value="complaint">Skarga</option>
+                        <option value="love-letter">List miłosny do gór</option>
+                    </select>
+                </div>
+                <div class="form-element" id="email">
+                    <label for="email-input">Email</label>
+                    <input type="email" id="email-input" name="email" placeholder="Jan.Kowalski@domena.com" required autocomplete>
+                </div>
+                <div class="form-element" id="phone">
+                    <label for="phone-input">Telefon</label>
+                    <button class="tel" type="button" id="down" onclick="goDown()"><img src="img/down.png" alt="Dół"></button>
+                    <button class="tel" type="button" id="up" onclick="goUp()"><img src="img/up.png" alt="Góra"></button>
+                    <output class="tel-output" id="phone-output" name="phone">500000000</output>
+                </div>
+                <div class="form-element" id="message">
+                    <label for="message-input">Wiadomość</label>
+                    <textarea id="message-input" name="message" placeholder="Góro, ojczyzno moja..." required autofocus minlength="50"></textarea>
+                </div>
+            </div>
+            <input type="submit" value="Wyślij">
+
+        </form>
+    </main>
+
+
+    <footer>
+        <span>&copy; 2026-<span id="current-year">????</span></span>
+        <span>Wojciech Skotniczny</span>
+        <a href="https://www.gnu.org/licenses/gpl-3.0.en.html#license-text">Licencja</a>
+    </footer>
+    <script src="img/index.js"></script>
+</body>
+</html>
+
+

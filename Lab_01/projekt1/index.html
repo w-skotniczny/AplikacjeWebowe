@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+    <html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <metaname ="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Strona główna</title>
+        <link rel="icon" type="image/x-icon" href="img/icon.png">
+        <link rel="stylesheet" href="./style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <button class="color-switcher" onclick="switchColors()">
+                <img src="img/color-switcher.png" alt="Przełącznik kolorów" />
+            </button>
+            <a href="index.html"><img id="logo" src="img/logo.png" alt="Logo" /></a>
+            <div class="nav-links-container">
+                <div class="nav-links">
+                    <a href="index.html" class="current">Strona główna</a>
+                    <a href="kontakt.html">Kontakt</a>
+                    <a href="galeria.html">Galeria</a>
+                </div>
+            </div>
+            <button class="nav-link-button" onclick="toggleNavLinks()">
+                <img src="img/nav-link-button.png" alt="hamburger" />
+            </button>
+        </nav>
+        <div class="mobile-links-container">
+            <a href="index.html" class="current">Strona główna</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="galeria.html">Galeria</a>
+        </div>
+
+
+        <main>
+            <section id="introduction">
+                <h1>Góry to moja pasja</h1>
+                <p>Góry są bardzo ciekawe. Kocham góry od wielu lat i bardzo interesuję się górami. Jedyne czego w życiu pragnę, to podziwiać piękno gór</p>
+                <div class="call-to-action-container">
+                    <a href="kontakt.html"><button id="call1"><strong>Napisz list</strong></button></a>
+                    <a href="https://pl.wikipedia.org/wiki/G%C3%B3ra"><button id="call2"><strong>Co to góra?</strong></button></a>
+                </div>
+            </section>
+
+            <section id="favourite">
+                <h3>Moje ulubione góry</h3>
+                <div class="favourite-container">
+                    <div class="favourite-mountain">
+                        <img src="img/wank.png" alt="wank" />
+                        <p>Wank</p>
+                    </div>
+                    <div class="favourite-mountain">
+                        <img src="img/baldy.png" alt="baldy" />
+                        <p>Mount Baldy</p>
+                    </div>
+                    <div class="favourite-mountain">
+                        <img src="img/hooker.png" alt="hooker" />
+                        <p>Mount Hooker</p>   
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="faq">
+                <div class="faq-header">
+                    <h1>FAQ</h1>
+                    <p>Często zadawane pytania</p>
+                </div>
+
+                <div class="faq-questions">
+                    <div class="faq-container">
+                        <div class="faq-question" onclick="toggleFaq(this.parentElement)">
+                            <h3>Co ci się podoba w górach?</h3>
+                            <img src="img/expand.png" alt="v" />
+                        </div>
+                        <div class="faq-answer">
+                            <p>Uwielbiam górach to, jak są spiczaste, chociaż kocham również bardziej gładkie szczyty.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-container">
+                        <div class="faq-question" onclick="toggleFaq(this.parentElement)">
+                            <h3>Ile razy myślałeś dzisiaj o górach?</h3>
+                            <img src="img/expand.png" alt="v" />
+                        </div>
+                        <div class="faq-answer">
+                            <p>Nie umiem liczyć tak wysoko :3</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-container">
+                        <div class="faq-question" onclick="toggleFaq(this.parentElement)">
+                            <h3>Czy kochasz chodzić po górach?</h3>
+                            <img src="img/expand.png" alt="v" />
+                        </div>
+                        <div class="faq-answer">
+                            <p>Kto niby zadał takie pytanie? przecież to oczywiste!</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-container">
+                        <div class="faq-question" onclick="toggleFaq(this.parentElement)">
+                            <h3>Jaki jest twój ulubiony wiersz o górach?</h3>
+                            <img src="img/expand.png" alt="v" />
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ten:<br/> Góry, góry, kocham góry.<br>Zburzę dla nich wszystkie mury.<br>Całe dnie myślę o górach i szczytach<br>...<br><br>Dalej nie pamiętam, sorry :(</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-container">
+                        <div class="faq-question" onclick="toggleFaq(this.parentElement)">
+                            <h3>Jakie masz sny w nocy?</h3>
+                            <img src="img/expand.png" alt="v" />
+                        </div>
+                        <div class="faq-answer">
+                            <p>Zwykle takie o chodzeniu po górach, ale jak miałem bardzo stresujący dzień, to zdarza się, że śni mi się tylko jak przygotowuję się do wejścia na jakąś górę.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer>
+            <span>&copy; 2026-<span id="current-year">????</span></span>
+            <span>Wojciech Skotniczny</span>
+            <a href="https://www.gnu.org/licenses/gpl-3.0.en.html#license-text">Licencja</a>
+        </footer>
+        <script src="img/index.js"></script>
+    </body>
+</html>
+
+

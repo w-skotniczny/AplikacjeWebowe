@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <metaname ="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Strona główna</title>
+        <link rel="icon" type="image/x-icon" href="img/icon.png">
+        <link rel="stylesheet" href="./style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <button class="color-switcher" onclick="switchColors()">
+                <img src="img/color-switcher.png" alt="Przełącznik kolorów" />
+            </button>
+            <a href="index.html"><img id="logo" src="img/logo.png" alt="Logo" /></a>
+            <div class="nav-links-container">
+                <div class="nav-links">
+                    <a href="index.html" class="current">Strona główna</a>
+                    <a href="kontakt.html">Kontakt</a>
+                    <a href="galeria.html">Galeria</a>
+                </div>
+            </div>
+            <button class="nav-link-button" onclick="toggleNavLinks()">
+                <img src="img/nav-link-button.png" alt="hamburger" />
+            </button>
+        </nav>
+        <div class="mobile-links-container">
+            <a href="index.html" class="current">Strona główna</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="galeria.html">Galeria</a>
+        </div>
+
+
+        <main>
+            <section id="film">
+                <h1>Moja ulubiona piosenka</h1>
+                <div class="film-wrapper">
+                    <iframe src="https://www.youtube.com/embed/DRFjkqOlroo?si=t5oSLnMSgh5PFLUC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+
+
+            <section id="galeria">
+                <h1>Galeria</h1>
+                <div class="galeria-container">
+                    <div class="galeria-img">
+                        <img src="img/g1.jpg" alt="góra 1" />
+                        <h2>Jakaś góra</h2>
+                    </div>
+                    <div class="galeria-img">
+                        <img src="img/g2.jpg" alt="góra 2" />
+                        <h2>Kolejna góra</h2>
+                    </div>
+                    <div class="galeria-img">
+                        <img src="img/g3.jpg" alt="góra 3" />
+                        <h2>Inna góra</h2>
+                    </div>
+                    <div class="galeria-img">
+                        <img src="img/g4.jpg" alt="góra 4" />
+                        <h2>Jeszcze Inna góra</h2>
+                    </div>
+                    <div class="galeria-img">
+                        <img src="img/g5.jpg" alt="góra 5" />
+                        <h2>Znowu góra</h2>
+                    </div>
+                    <div class="galeria-img">
+                        <img src="img/g6.jpg" alt="góra 6" />
+                        <h2>Jeszcze jakaś góra</h2>
+                    </div>
+                    <div class="galeria-img">
+                        <img src="img/g7.jpg" alt="góra 7" />
+                        <h2>Następna góra</h2>
+                    </div>
+                    <div class="galeria-img">
+                        <img src="img/g8.jpg" alt="góra 8" />
+                        <h2>Jeszcze raz góra</h2>
+                    </div>
+                    <div class="galeria-img">
+                        <img src="img/g9.jpg" alt="góra 9" />
+                        <h2>Ostatnia góra</h2>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer>
+            <span>&copy; 2026-<span id="current-year">????</span></span>
+            <span>Wojciech Skotniczny</span>
+            <a href="https://www.gnu.org/licenses/gpl-3.0.en.html#license-text">Licencja</a>
+        </footer>
+        <script src="img/index.js"></script>
+    </body>
+</html>
+
+
