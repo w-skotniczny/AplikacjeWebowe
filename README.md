@@ -5,4 +5,4 @@
 * [Ćwiczenie 4](https://w-skotniczny.github.io/AplikacjeWebowe/Lab_04/cw/)
 * [Ćwiczenie 5](https://w-skotniczny.github.io/AplikacjeWebowe/Lab_05/cw/)
 # Projekty
-- [Mini Projekt 1](https://w-skotniczny.github.io/AplikacjeWebowe/Projekty/projekt1/)
+- [Mini Projekt 1](https://w-skotniczny.github.io/AplikacjeWebowe/Lab_01/projekt1/)
