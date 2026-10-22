@@ -361,7 +361,7 @@ label{
 }
 
 #introduction {
-    height: calc(90vh - 60px);
+    height: calc(90dvh - 60px);
     background-color: var(--color-primary);
     color: var(--color-background);
 }
@@ -583,7 +583,7 @@ iframe{
 
     #introduction {
         gap: 10px;
-        height: calc(90vh - 20px);
+        height: calc(90dvh - 20px);
     }
 
     .nav-links-container {
