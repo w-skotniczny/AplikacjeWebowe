@@ -17,11 +17,26 @@
 html {
     background-color: var(--color-background);
     height: 100vh;
+    font-size: 16px;
 }
 
 body {
     height: 100vh;
     margin: 0;
+}
+
+section {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.5rem;
+    margin: 30px;
+    padding: 40px;
+    border-radius: 40px;
 }
 
 .main-container {
@@ -41,7 +56,7 @@ main {
     justify-content: center;
     margin: auto;
     padding-top: 10vh;
-    padding-bottom: 10vh;
+    min-height: 93vh;
 }
 
 #logo {
@@ -197,6 +212,7 @@ footer a:hover {
 }
 
 form {
+    box-sizing: border-box;
     align-items: center;
     border-radius: 50px;
     background-color: var(--color-secondary20);
@@ -258,7 +274,8 @@ select{
 }
 
 input[type=submit] {
-    width: 200px;
+    min-width: 150px;
+    width: 50%;
     text-align: center;
     cursor: pointer;
     transition-duration: 0.2s;
@@ -298,6 +315,10 @@ button.tel {
 
 button.tel img{
     height: 100%;
+}
+
+label{
+    text-align: center;
 }
 
 .form-element#email {
@@ -349,26 +370,19 @@ button.tel img{
 }
 
 #introduction {
-    box-sizing: border-box;
-    width: 100%;
     height: calc(90vh - 60px);
     background-color: var(--color-primary);
     color: var(--color-background);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    font-size: 1.5rem;
-    margin: 30px;
-    padding: 40px;
-    border-radius: 40px;
 }
 
 h1{
     text-align: center;
     margin: 0;
     line-height: 3.5rem;
+}
+
+h3{
+    text-align: center;
 }
 
 #introduction p {
@@ -378,14 +392,16 @@ h1{
 }
 
 .call-to-action-container {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .call-to-action-container button {
+    box-sizing: border-box;
     width: 220px;
     height: 100px;
     font-size: 1.5rem;
@@ -422,17 +438,7 @@ h1{
 }
 
 #favourite {
-    box-sizing: border-box;
-    width: 100%;
     color: var(--color-text);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    font-size: 1.5rem;
-    margin: 30px;
-    border-radius: 40px;
 }
 
 .favourite-container {
@@ -476,7 +482,7 @@ h1{
 }
 
 .faq-questions {
-    width: 70%;
+    width: 100%;
 }
 
 .faq-container{
@@ -559,6 +565,7 @@ iframe{
     box-sizing: border-box;
     columns: 300px;
     column-gap: 20px;
+    width: 100%;
 }
 
 .galeria-img {
@@ -579,14 +586,30 @@ iframe{
 }
 
 .galeria-img img:hover{
-    transform: scale(1.05);
+    transform: scale(1.15);
 }
 
 .galeria-img h2{
     text-align: center;
+    margin: 0;
 }
 
 @media (max-width: 1067px) {
+    section {
+        margin: 10px;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    #introduction {
+        gap: 10px;
+        height: calc(90vh - 20px);
+    }
+
+    .mobile-links-container a{
+        font-size: 1.5rem;
+    }
+
     .nav-links-container {
         display: none;
     }
@@ -595,32 +618,46 @@ iframe{
         display: block;
     }
 
-    .form-grid {
-        display: block;
+    form{
+        margin: 10px;
+        padding: 10px;
+        font-size: 1rem;
     }
 
-    .form-element {
-        display: block;
-        float: left;
-        padding: 10px;
+    .form-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 
     form textarea {
         height: 200px;
+        font-size: 1rem;
     }
 
-    h1 {
-        font-size: 2rem;
-        line-height: 1.8rem;
+    button.tel img{
+        height: 30px;
     }
 
-    p {
+    input, select {
+        padding-bottom: 10px;
+        font-size: 1rem;
+    }
+
+    h1{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    p{
         font-size: 1rem;
     }
 
     .call-to-action-container button {
-        width: 200px;
-        height: 90px;
+        width: auto;
+        height: 75px;
+        margin: 0;
         font-size: 1rem;
     }
 
@@ -630,13 +667,40 @@ iframe{
 
     .favourite-container{
         flex-direction: column;
-        width: 80%;
+        width: 100%;
+    }
+
+    .faq-header{
+        width: 100%;
     }
 
     #faq{
         flex-direction: column;
         align-items: center;
-        width: 80%;
+    }
+
+    .faq-question {
+        font-size: 0.8rem;
+    }
+
+    .faq-question img{
+        height: 20px;
+    }
+
+    .galeria-img{
+        padding: 5px;
+    }
+
+    .galeria-img h2 {
+        font-size: 1rem;
+    }
+
+    .galeria-img img:hover{
+        transform: scale(1.05);
+    }
+
+    footer{
+        font-size: 0.5rem;
     }
 }
 
