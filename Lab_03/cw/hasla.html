@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="passwordContainer">
+            <div class="inputContainer">
+                <input id = "min" type="text" placeholder="6">
+                <label for="min">minimalna długość</label>
+            </div>
+            <div class="inputContainer">
+                <input id = "max" type="text" placeholder="12">
+                <label for="max">maksymalna długość</label>
+            </div>
+            <div class="inputContainer">
+                <input id = "big" type="checkbox">
+                <label for="big">wielkie litery</label>
+            </div>
+            <div class="inputContainer">
+                <input id = "special" type="checkbox">
+                <label for="special">znaki specjalne</label>
+            </div>
+            <button onclick="generate()">Wygeneruj hasło</button>
+            <h1></h1>
+        </div>
+        <script src="script.js"></script> 
+    </body>
+</html>
