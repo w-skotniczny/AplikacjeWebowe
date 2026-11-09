@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container" style="justify-content: center; padding: 20px; gap: 20px;">
+        <input type="text" id="filter" placeholder="Filtr" oninput="filterAndSortProducts()">
+        <select id="sort" onchange="filterAndSortProducts()">
+            <option value="default">Domyślnie</option>
+            <option value="asc">Rosnąco</option>
+            <option value="desc">Malejąco</option>
+        </select>
+    </div>
+    <div class="productsContainer">
+    </div>
+    <script src="api.js"></script>
+</body>
+</html>
+

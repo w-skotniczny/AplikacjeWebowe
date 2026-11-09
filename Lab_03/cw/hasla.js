@@ -1,5 +1,5 @@
-function randint(min, max){
-    return Math.floor(Math.random() * (max-min) + min);
+function randint(mini, maxi){
+    return Math.floor(Math.random() * (maxi - mini + 1) + mini);
 }
 
 function generate(){
@@ -7,14 +7,14 @@ function generate(){
     bigChars = 'abcdefghijklmnopqrstuvwxyz'.toUpperCase().split('');
     specialChars = '!@#$%^&*'.split('');
 
-    minLen = document.getElementById("min").value;
-    maxLen = document.getElementById("max").value;
+    minLen = parseInt(document.getElementById("min").value);
+    maxLen = parseInt(document.getElementById("max").value);
     big = document.getElementById("big").checked;
     special = document.getElementById("special").checked;
-    if(minLen == ""){
+    if(isNaN(minLen)){
         minLen = 6;
     }
-    if(maxLen == ""){
+    if(isNaN(maxLen)){
         maxLen = 12;
     }
 
@@ -27,10 +27,12 @@ function generate(){
     }
 
     len = randint(minLen, maxLen);
+    console.log(len);
     password = "";
     for(i = 0; i < len; i++){
-        password = password + possible[randint(0, possible.length)];
+        password = password + possible[randint(0, possible.length-1)];
     }
 
     document.querySelector("h1").innerHTML = password;
+    alert(password);
 }
