@@ -14,6 +14,22 @@ body{
     justify-content: space-between;
 }
 
+.passwordContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputContainer{
+    background-color: black;
+    color: hotpink;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 h1{
     text-align: center;
     text-justify: center;
@@ -43,4 +59,15 @@ button:hover{
 button:active{
     background-color: hotpink;
     color: black;
+}
+
+input[type=text]{
+    border:0;
+    background-color: hotpink;
+    color: black;
+    border-radius: 16px;
+}
+
+input[type=checkbox] {
+  accent-color: hotpink;
 }
